@@ -1,0 +1,10 @@
+{
+  "name": "mpk-sections-site",
+  "version": "0.0.0",
+  "ignore": "",
+  "ignoreOverwrite": "client/app/**;client/assets/**;client/bower_components/**;client/index.html;client/favicon.ico",
+  "ignorePath": "client/app/**",
+  "checkVersion": true,
+  "xpost": "gulp update-project"
+
+}

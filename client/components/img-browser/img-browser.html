@@ -1,0 +1,18 @@
+<div class="img-browser" ng-cloak>
+  <div class="img-browser-header padding">
+    <h1>{{o.title}}</h1>
+    <p>{{o.subTitle}}</p>
+  </div>
+  <div class="img-container" image-cover ng-style="browserStyle"></div>
+  <div class="img-browser-commands">
+    <div class="img-browser-command float-left as-button" ng-click="prev()"><span class="glyphicon glyphicon-chevron-left" data-aria-hidden="true"></span></div>
+    <div class="img-browser-command float-right as-button" ng-click="next()"><span class="glyphicon glyphicon-chevron-right" data-aria-hidden="true"></span></div>
+  </div>
+  <div class="img-browser-pills">
+    <div class="pill" ng-repeat="item in o.items">
+      <span class="glyphicon glyphicon-globe as-button" ng-class="{'active': $index==o.current}"
+            data-aria-hidden="true" ng-click="show($index)"></span>
+    </div>
+  </div>
+  <div ng-transclude></div>
+</div>

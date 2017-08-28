@@ -1,0 +1,43 @@
+.img-browser {
+  overflow-x: hidden;
+  position: relative;
+  color: white;
+  .img-browser-header {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+  }
+  .img-container {
+  }
+  .img-browser-commands {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    .img-browser-command {
+      width: 100px;
+      height: 60px;
+      border-radius: 50%;
+      line-height: 60px;
+      text-align: center;
+      font-size: 40px;
+    }
+  }
+  .img-browser-pills {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    left: 0;
+    text-align: center;
+    >.pill {
+      display: inline-block;
+      margin: 0 5px;
+      .glyphicon {
+        &.active {
+          opacity: 1 !Important;
+        }
+      }
+    }
+  }
+}
