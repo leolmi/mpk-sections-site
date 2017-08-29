@@ -78,12 +78,16 @@
     "supertest": "~0.11.0",
     "yargs": "^6.5.0"
   },
+  "author": {
+    "name": "Leonardo Olmi <leo.olmi@gmail.com>",
+    "email": "leo.olmi@gmail.com",
+    "url": "http://..."
+  },
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
     "start": "node server/app.js",
     "poststart": "http://localhost:9000"
-  },
-  "private": true
+  }
 }
