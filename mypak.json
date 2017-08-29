@@ -5,5 +5,6 @@
   "ignoreOverwrite": "client/app/**;client/assets/**;client/bower_components/**;client/index.html;client/favicon.ico",
   "ignorePath": "client/app/**",
   "checkVersion": true,
-  "xpost": "gulp update-project"
+  "xpost": "gulp update-project",
+  "gitignore": "node_modules\npublic\n.tmp\n.sass-cache\n.idea\n.install-here\nclient/bower_components\ndist\n/server/config/local.env.js"
 }
