@@ -2,8 +2,8 @@
   "desc": "Web client-server spa angular v.1. Use sections as unit element on the page to show contents.",
   "types": "node,express,socketio,angular1,gulp",
   "ignore": "",
-  "ignoreOverwrite": "client/app/**;client/assets/**;client/bower_components/**;client/index.html;client/favicon.ico",
-  "ignorePath": "client/app/**",
+  "ignoreOverwrite": "client/app/**;client/assets/**;client/index.html;client/favicon.ico;server/api/**",
+  "ignorePath": "client/app/**;",
   "checkVersion": true,
   "xpost": "gulp update-project",
   "gitignore": "node_modules\npublic\n.tmp\n.sass-cache\n.idea\n.install-here\nclient/bower_components\ndist\n/server/config/local.env.js"
