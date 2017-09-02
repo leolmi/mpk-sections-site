@@ -1,5 +1,5 @@
-/* Created by Leo on 14/08/2017. */
 'use strict';
+// MYPAK - deploy sequences
 const _ = require('lodash');
 const gulp = require('gulp');
 const concat = require('gulp-concat');

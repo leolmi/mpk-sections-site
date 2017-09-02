@@ -6,5 +6,6 @@
   "ignorePath": "client/app/**;",
   "checkVersion": true,
   "xpost": "gulp update-project",
+  "xfirstpost":"bower install;npm install",
   "gitignore": "node_modules\npublic\n.tmp\n.sass-cache\n.idea\n.install-here\nclient/bower_components\ndist\n/server/config/local.env.js"
 }

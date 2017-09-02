@@ -1,4 +1,5 @@
 'use strict';
+// MYPAK - deploy tasks
 const _ = require('lodash');
 const gulp = require('gulp');
 const args = require('yargs').argv;
@@ -114,4 +115,21 @@ gulp.task('deploy-index', function () {
   //TODO ....
 
 
+});
+
+
+
+gulp.task('deploy', function(cb) {
+  runSequence(
+    'deploy-clean',
+    'deploy-images',
+    // 'deploy-fonts',
+    // 'deploy-icons',
+    'deploy-styles',
+    'deploy-vendor-styles',
+    'deploy-templates',
+    'deploy-js',
+    'deploy-vendor-js',
+    'deploy-index',
+    cb);
 });

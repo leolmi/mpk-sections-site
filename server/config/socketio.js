@@ -4,7 +4,9 @@
 
 'use strict';
 
-var config = require('./environment');
+const config = require('./environment');
+const _ = require('lodash');
+
 
 // When the user disconnects.. perform this
 function onDisconnect(socket) {
@@ -38,9 +40,10 @@ module.exports = function (socketio) {
   // }));
 
   socketio.on('connection', function (socket) {
-    socket.address = socket.handshake.address !== null ?
-            socket.handshake.address.address + ':' + socket.handshake.address.port :
-            process.env.DOMAIN;
+    socket.address =
+        _.isObject(socket.handshake.address) ? socket.handshake.address.address + ':' + socket.handshake.address.port :
+        (_.isString(socket.handshake.address) ? socket.handshake.address :
+        process.env.DOMAIN);
 
     socket.connectedAt = new Date();
 

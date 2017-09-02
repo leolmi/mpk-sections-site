@@ -7718,7 +7718,7 @@ section {
     .img-browser .img-browser-pills > .pill {
       display: inline-block;
       margin: 0 5px; }
-      .img-browser .img-browser-pills > .pill .glyphicon.active {
+      .img-browser .img-browser-pills > .pill .as-button.active {
         opacity: 1 !Important; }
 
 /*# sourceMappingURL=app.css.map */
